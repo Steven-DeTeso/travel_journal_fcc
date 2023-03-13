@@ -1,13 +1,13 @@
 import React from "react"
 
-import NavBar from "./components/Navbar/NavBar"
-import Main from "./components/Main/Main"
+import NavBar from "./components/NavBar"
+import Main from "./components/Section"
 
 function App () {
     return (
-    <div>
+    <div className="page-container">
         <NavBar />
-        <Main />
+        <Section />
     </div>
     )
 }
