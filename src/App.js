@@ -1,13 +1,20 @@
 import React from "react"
 
 import NavBar from "./components/NavBar"
-import Main from "./components/Section"
+import Section from "./components/Section"
+import data from "./data"
 
 function App () {
+    const section = data.map(data => {
+        return (<Section 
+        key={data.id}
+        data={data}
+        />)
+    })
     return (
     <div className="page-container">
         <NavBar />
-        <Section />
+        {section}
     </div>
     )
 }
